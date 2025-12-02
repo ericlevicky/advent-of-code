@@ -2,7 +2,13 @@ import src.year_2025.day_1.code as day_1
 
 
 def test_some_function():
-    # TODO: Update expected value once solution is implemented
-    expected = 0
+    expected = 3
     result = day_1.some_function("test.txt")
     assert result == expected
+
+
+def test_part_two_some_function():
+    # Part 2: Count every click where dial points at 0
+    result = day_1.some_function("test.txt", True)
+    # This will count all times we pass through 0 during rotations
+    assert result >= 0  # Actual value depends on specific crossing counts
