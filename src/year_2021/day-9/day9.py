@@ -58,7 +58,6 @@ def getSurroundingSpots(grid: List[List[int]], r:int, c:int, asCoordinates:bool 
 
 
 def getBasinChildrenCount(grid: List[List[int]], r: int, c: int):
-    global spotsChecked
     print(f"r: {r}, c: {c}")
     childrenOfBasin = 0
     currSpot = grid[r][c]

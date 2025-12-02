@@ -21,10 +21,6 @@ class Monkey:
         self.false_monkey = false_monkey
 
     def take_turn(self, part_two: bool = False):
-        global COMFORT_LEVEL
-        global MONKIES
-        global ACTIVITIES
-        global DIVISOR
         for i in range(0, len(self.starting_items)):
             item = self.starting_items.pop(0)
 
@@ -68,7 +64,6 @@ def some_function(file_name: str = "input.txt", part_two: bool = False) -> int:
 
     rounds = 20 if part_two is False else 10000
 
-    global MONKIES
     global ACTIVITIES
     global DIVISOR
 
