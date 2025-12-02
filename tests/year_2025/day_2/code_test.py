@@ -24,4 +24,16 @@ def test_some_function():
 def test_part_two_some_function():
     # Part 2: Count of invalid IDs in test ranges
     result = day_2.some_function("test.txt", True)
-    assert result == 6
+    assert result == 2252
+
+
+def test_input_some_function():
+    # Part 1: Sum of invalid IDs in test ranges
+    result = day_2.some_function("input.txt")
+    assert result == 40055209690
+
+
+def test_input_part_two_some_function():
+    # Part 2: Count of invalid IDs in test ranges
+    result = day_2.some_function("input.txt", True)
+    assert result == 50857215650
