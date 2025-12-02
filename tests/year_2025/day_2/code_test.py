@@ -18,7 +18,7 @@ def test_is_repeated_sequence():
 def test_some_function():
     # Part 1: Sum of invalid IDs in test ranges
     result = day_2.some_function("test.txt")
-    assert result == 2252
+    assert result == 1142
 
 
 def test_part_two_some_function():

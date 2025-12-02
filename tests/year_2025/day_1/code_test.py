@@ -13,7 +13,7 @@ def test_input_some_function():
     assert result == expected
 
 
-def test_part_two_some_function():
+def test_part_one_some_function():
     # Part 2: Count every click where dial points at 0
     result = day_1.some_function("test.txt", False)
     # This will count all times we pass through 0 during rotations
