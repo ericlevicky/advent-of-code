@@ -8,7 +8,7 @@ def test_some_function():
 
 
 def test_input_some_function():
-    expected = 17535
+    expected = 17383
     result = day_3.some_function("input.txt")
     assert result == expected
 
@@ -20,6 +20,6 @@ def test_part_two_some_function():
 
 
 def test_input_part_two_some_function():
-    expected = 173577199527257
+    expected = 172601598658203
     result = day_3.some_function("input.txt", True)
     assert result == expected

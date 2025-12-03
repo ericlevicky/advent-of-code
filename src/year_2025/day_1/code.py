@@ -26,11 +26,16 @@ def some_function(file_name: str = "input.txt", part_two: bool = False) -> int:
 
     for line in all_lines:
         line = line.strip()
-        if not line:
+        # Skip empty and comment lines
+        if not line or line.startswith("//"):
             continue
 
         direction = line[0]
-        steps = int(line[1:])
+        steps_str = line[1:].strip()
+        if not steps_str.isdigit():
+            # Ignore malformed lines
+            continue
+        steps = int(steps_str)
 
         if part_two:
             # Count every time we pass through or land on 0
